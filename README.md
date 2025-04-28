@@ -1,4 +1,4 @@
-#Titanic Dataset - Exploratory Data Analysis (EDA)
+## Titanic Dataset - Exploratory Data Analysis (EDA)
 
 This project performs an **Exploratory Data Analysis (EDA)** on the famous **Titanic dataset**.
 

@@ -19,7 +19,7 @@ FROM
 SELECT
   EXTRACT(YEAR FROM STR_TO_DATE(`Date`, '%Y-%m-%d')) AS order_year,
   EXTRACT(MONTH FROM STR_TO_DATE(`Date`, '%Y-%m-%d')) AS order_month,
-  SUM(`Total Revenue`) AS monthly_revenue,
+  ROUND(SUM(`Total Revenue`),2) AS monthly_revenue,
   COUNT(DISTINCT `Transaction ID`) AS monthly_order_volume
 FROM
   `online sales data`
